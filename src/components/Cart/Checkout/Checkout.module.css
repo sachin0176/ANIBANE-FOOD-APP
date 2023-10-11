@@ -1,0 +1,92 @@
+.form{
+    margin: 1rem 0;
+    height: 19rem;
+    overflow: auto;
+}
+
+.control{
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+margin-bottom: .5rem;
+
+}
+
+.control label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.control input{
+    font: inherit;
+    border-radius: 6px;
+    padding: 0.25rem;
+    width: 20rem;
+    max-width: 100%;
+    border: 1px solid #cccc;
+}
+
+
+.control input:focus{
+    border: none;
+    border:1px solid #5a1a01;
+}
+
+
+
+
+.actions{
+    
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.actions button{
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #8a2b06;
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+}
+
+.actions button:hover,
+.actions button:active{
+    background-color: #5a1a01;
+  border-color: #5a1a01;
+  color: white;
+
+}
+
+.actions .button{
+    background-color: #8a2b06;
+    color: white;
+}
+.actions .btn-alt{
+    color: #8a2b06;
+}
+
+.invalid input{
+
+    border-color: #aa0b20;
+    background-color: #ffeff1;
+}
+
+.invalid p{
+    color: #ca3e51;
+
+}
+
+.actions button :disabled,
+.actions button:disabled:hover,
+.actions button:disabled:active{
+
+    cursor: not-allowed;
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #292929;
+}

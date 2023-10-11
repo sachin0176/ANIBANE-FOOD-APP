@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <Fragment>
       <header className={styles["header"]}>
-        <h1>ANIBAE MEALS</h1>
+        <h1>ANIBANE MEALS</h1>
         <HeaderCartButton onClick={props.onShowCart} ></HeaderCartButton>
       </header>
       <div className={styles["main-image"]}>
